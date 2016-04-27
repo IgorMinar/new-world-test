@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<hello-world>loading... (did you run `npm run build-es6-or-ts-plunker`?)</hello-world>
+
+<script src="../node_modules/zone.js/dist/zone.js"></script>
+<script src="../node_modules/reflect-metadata/Reflect.js"></script>
+<script src="https://code.angularjs.org/tools/system.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.16/Rx.js"></script>
+<script>
+  System.config({
+    map: {
+      "@igorminar/core": "http://localhost:8888/node_modules/@igorminar/core/core.umd.js",
+      "@igorminar/common": "http://localhost:8888/node_modules/@igorminar/common/common.umd.js",
+      "@igorminar/compiler": "http://localhost:8888/node_modules/@igorminar/compiler/compiler.umd.js",
+      "@igorminar/platform-browser": "http://localhost:8888/node_modules/@igorminar/platform-browser/platform-browser.umd.js",
+      "@igorminar/platform-browser-dynamic": "http://localhost:8888/node_modules/@igorminar/platform-browser-dynamic/platform-browser-dynamic.umd.js",
+    }
+
+  });
+  System.import('./dist/hello_world.js');
+
+
+</script>
+</html>
