@@ -1,2 +1,4 @@
 dist/
 node_modules/
+system-js/node_modules
+system-js/typings
