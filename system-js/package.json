@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build": "tsc",
-	"bundle": "node bundle.js"
+    "build": "tsc",
+    "bundle": "node bundle.js",
+	"bundle:prod": "node bundle.js --prod"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "rxjs": "^5.0.0-beta.2",
     "systemjs-builder": "^0.15.15",
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "yargs": "^4.6.0"
   }
 }
