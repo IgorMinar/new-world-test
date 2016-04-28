@@ -71,5 +71,5 @@ export function main() {
 
 
 main().then(html => {
-  console.log('HTML\n' + html);
+  console.log('\nPRERENDER HTML\n\n' + html + '\n');
 });

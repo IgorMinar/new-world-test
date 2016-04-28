@@ -20,7 +20,8 @@
     "js.clone": "~0.0.3",
     "webpack": "2.1.0-beta.6",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.9.0-dev.20160426"
+    "typescript": "^1.9.0-dev.20160426",
+    "parse5": "^1.5.0"
   },
   "dependencies": {
     "@igorminar/common": "0.2.0",
