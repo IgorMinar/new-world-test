@@ -13,13 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@igorminar/common": "^0.3.0",
-    "@igorminar/compiler": "^0.3.0",
-    "@igorminar/core": "^0.3.0",
-    "@igorminar/platform-browser": "^0.3.0",
-    "@igorminar/platform-browser-dynamic": "^0.3.0",
+    "@angular/common": "0.0.0-0",
+    "@angular/compiler": "0.0.0-0",
+    "@angular/core": "0.0.0-0",
+    "@angular/platform-browser": "0.0.0-0",
+    "@angular/platform-browser-dynamic": "0.0.0-0",
     "reflect-metadata": "^0.1.3",
-    "rxjs": "5.0.0-beta.2",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "^0.19.26",
     "zone.js": "^0.6.12"
   },
   "devDependencies": {

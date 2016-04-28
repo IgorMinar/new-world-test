@@ -2,7 +2,7 @@
 System.config({
 	map: {
 		'rxjs': 'node_modules/rxjs',
-		'@igorminar': 'node_modules/@igorminar',
+		'@angular': 'node_modules/@angular',
 		'app': 'dist'
 	},
 	packages: {
@@ -10,23 +10,23 @@ System.config({
 			main: 'main.js',
 			defaultExtension: 'js'
 		},
-		'@igorminar/core': {
+		'@angular/core': {
 			main: 'index.js',
 			defaultExtension: 'js'
 		},
-		'@igorminar/compiler': {
+		'@angular/compiler': {
 			main: 'index.js',
 			defaultExtension: 'js'
 		},
-		'@igorminar/common': {
+		'@angular/common': {
 			main: 'index.js',
 			defaultExtension: 'js'
 		},
-		'@igorminar/platform-browser': {
+		'@angular/platform-browser': {
 			main: 'index.js',
 			defaultExtension: 'js'
 		},
-		'@igorminar/platform-browser-dynamic': {
+		'@angular/platform-browser-dynamic': {
 			main: 'index.js',
 			defaultExtension: 'js'
 		},
