@@ -1,6 +1,5 @@
 var webpack = require('webpack');
-var webpackMerge = require('webpack-merge');
-var path = require('path');
+var clone = require('js.clone');
 
 var webpackConfig = {
   cache: false,
@@ -11,7 +10,12 @@ var webpackConfig = {
     path: './dist',
   },
 
-
+  module: {
+    loaders: [
+      // .ts files for TypeScript
+      { test: /\.ts$/, loader: 'ts-loader' }
+    ]
+  },
 
   plugins: [
   ],
@@ -29,29 +33,9 @@ var webpackConfig = {
   },
 
 }
-var commonConfig = {
-  module: {
-    loaders: [
-      // .ts files for TypeScript
-      { test: /\.ts$/, loader: 'ts-loader' }
-    ]
-  }
-}
-
-function clone(obj) {
-  return JSON.parse(JSON.stringify(obj))
-}
-
-function merge(obj) {
-  return webpackMerge(clone(obj), obj);
-}
-
-function common(obj) {
-  return webpackMerge(commonConfig, obj);
-}
 
 
 module.exports = [
-  common(require('./webpack.config-browser')(clone(webpackConfig))),
-  common(require('./webpack.config-server')(clone(webpackConfig))),
+  require('./webpack.config-browser')(clone(webpackConfig)),
+  require('./webpack.config-server')(clone(webpackConfig)),
 ]
