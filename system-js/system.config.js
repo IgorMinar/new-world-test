@@ -23,11 +23,11 @@ System.config({
 			defaultExtension: 'js'
 		},
 		'@igorminar/platform-browser': {
-			main: 'platform_browser.js',
+			main: 'index.js',
 			defaultExtension: 'js'
 		},
 		'@igorminar/platform-browser-dynamic': {
-			main: 'platform_browser_dynamic.js',
+			main: 'index.js',
 			defaultExtension: 'js'
 		},
 		'rxjs': {
