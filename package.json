@@ -7,6 +7,8 @@
     "build-es6-or-ts-plunker": "tsc -p es6-or-ts-plunker/tsconfig.json",
     "build-es6-or-ts-bundle": "cd es6-or-ts-bundle && tsc -p ./tsconfig.json    &&    rollup -f iife -c ./rollup.config.js -o ./dist/bundle.es2015.js   &&   tsc --out ./dist/bundle.js --target es5  --allowJs dist/bundle.es2015.js",
     "build-ts-webpack2": "cd ts-webpack2 && webpack",
+    "build-ts-webpack2-universal": "cd ts-webpack2-universal && webpack",
+    "server:universal": "npm run build-ts-webpack2-universal && node ./ts-webpack2-universal/server.js",
     "server": "python -m SimpleHTTPServer 8888"
   },
   "author": "",
@@ -15,9 +17,11 @@
     "rollup": "^0.26.0",
     "rollup-plugin-node-resolve": "^1.5.0",
     "rxjs-es": "^5.0.0-beta.2",
+    "js.clone": "~0.0.3",
     "webpack": "2.1.0-beta.6",
     "ts-loader": "^0.8.2",
-    "typescript": "^1.9.0-dev.20160426"
+    "typescript": "^1.9.0-dev.20160426",
+    "parse5": "^1.5.0"
   },
   "dependencies": {
     "@igorminar/common": "0.2.0",
@@ -25,6 +29,7 @@
     "@igorminar/core": "0.2.0",
     "@igorminar/platform-browser": "0.2.0",
     "@igorminar/platform-browser-dynamic": "0.2.0",
+    "@igorminar/platform-server": "0.2.0",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.2",
     "rxjs-es": "5.0.0-beta.2",
