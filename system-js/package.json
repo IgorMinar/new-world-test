@@ -1,0 +1,32 @@
+{
+  "name": "system-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "bundle": "node bundle.js",
+    "bundle:prod": "node bundle.js --prod",
+    "serve": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "0.0.0-0",
+    "@angular/compiler": "0.0.0-0",
+    "@angular/core": "0.0.0-0",
+    "@angular/platform-browser": "0.0.0-0",
+    "@angular/platform-browser-dynamic": "0.0.0-0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "^0.19.26",
+    "zone.js": "^0.6.12"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.0",
+    "systemjs-builder": "^0.15.15",
+    "typescript": "^1.8.10",
+    "yargs": "^4.6.0"
+  }
+}
