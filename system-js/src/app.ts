@@ -1,4 +1,4 @@
-import {Component} from '@igorminar/core'
+import {Component} from '@angular/core'
 import {NameService} from './service'
 
 @Component({
