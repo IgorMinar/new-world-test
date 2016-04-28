@@ -1,5 +1,5 @@
-import {Component} from '@igorminar/core';
-import {bootstrap} from '@igorminar/platform-browser-dynamic';
+import {Component} from '@angular/core';
+import {bootstrap} from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'hello-world',

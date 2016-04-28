@@ -28,10 +28,10 @@ module.exports = {
     extensions: ['', '.ts', '.js'],
 
     // alias: {
-    //   '@igorminar/core': path.resolve(__dirname, 'node_modules/@igorminar/core/esm/core.js'),
-    //   '@igorminar/platform-browser': path.resolve(__dirname, 'node_modules/@igorminar/platform-browser/esm/platform_browser.js'),
-    //   '@igorminar/router': path.resolve(__dirname, 'node_modules/@igorminar/router/esm/router.js'),
-    //   '@igorminar/http': path.resolve(__dirname, 'node_modules/@igorminar/http/esm/http.js')
+    //   '@angular/core': path.resolve(__dirname, 'node_modules/@angular/core/esm/core.js'),
+    //   '@angular/platform-browser': path.resolve(__dirname, 'node_modules/@angular/platform-browser/esm/platform_browser.js'),
+    //   '@angular/router': path.resolve(__dirname, 'node_modules/@angular/router/esm/router.js'),
+    //   '@angular/http': path.resolve(__dirname, 'node_modules/@angular/http/esm/http.js')
     // },
   },
 
